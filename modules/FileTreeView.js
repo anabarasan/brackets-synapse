@@ -493,7 +493,7 @@ define(function (require, exports, module) {
 					entity = ent;
 				}
 			});
-			if (entity.type !== "file" && entity.type !== "symlink") {
+			if (entity && entity.type !== "file" && entity.type !== "symlink") {
 				children = entity.children;
 			}
 		});
